@@ -3,7 +3,9 @@ package com.assignment.smartaviation.validation;
 import com.assignment.smartaviation.exception.AirlineServiceException;
 import org.springframework.stereotype.Service;
 
-import java.util.regex.Pattern;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 @Service
 public class AirlineDataValidatorService {
@@ -41,8 +43,11 @@ public class AirlineDataValidatorService {
                     .build();
         }
 
-        Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
-        if (!(pattern.matcher(date)).matches()){
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            dateFormat.parse(date);
+        } catch (ParseException exception){
+            exception.printStackTrace();
             throw new AirlineServiceException.Builder()
                     .errorCode("DATE_INVALID")
                     .errorMessage("Date is not valid in input")
