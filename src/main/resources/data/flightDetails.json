@@ -1,0 +1,37 @@
+[
+  {
+    "flightId": 0,
+    "flightNumber": 8225,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2022-11-20T02:17:50-01:00"
+  },
+  {
+    "flightId": 1,
+    "flightNumber": 3295,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2016-04-29T06:57:33-02:00"
+  },
+  {
+    "flightId": 2,
+    "flightNumber": 3392,
+    "departureAirportIATACode": "YYT",
+    "arrivalAirportIATACode": "KRK",
+    "departureDate": "2023-04-16T02:22:08-02:00"
+  },
+  {
+    "flightId": 3,
+    "flightNumber": 5348,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "KRK",
+    "departureDate": "2021-06-16T09:44:34-02:00"
+  },
+  {
+    "flightId": 4,
+    "flightNumber": 3346,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2021-01-27T03:55:19-01:00"
+  }
+]
